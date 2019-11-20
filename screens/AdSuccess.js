@@ -27,7 +27,8 @@ class AdSucces extends React.Component {
     const {navigation} = this.props
     return (
       <View style={styles.container}>
-        <CustomHeader title={'AD SUCCESS'}/>
+        <CustomHeader title={'AD SUCCESS'}
+        navigation = {this.props.navigation}/>
         <View style = {{flex : 1 , justifyContent : 'center'}}>
           <Text style = {styles.videoSlogan}> Classified Add Posted Succesfully </Text>
           <Text style = {[styles.videoSlogan , {fontSize : 16}]}> Yor Add Will Be Up for 3 weaks </Text>

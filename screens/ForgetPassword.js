@@ -22,7 +22,8 @@ export default class ForgetPassword extends React.Component {
     render() {
         return (
           <ScrollView style={styles.container}>
-          <CustomHeader title = {'FORGOT PASSWORD'} />
+          <CustomHeader title = {'FORGOT PASSWORD'} 
+          />
           <Logo height={250}/>
            <Slogan />
            <View style = {{flexDirection : 'row' }}>

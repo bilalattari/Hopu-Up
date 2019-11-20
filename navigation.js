@@ -45,7 +45,7 @@ style={{backgroundColor : 'blue' , flex : 1 , justifyContent : 'center' , alignI
  
 const AuthStack = createStackNavigator({
   Landing: {
-    screen: Transactions,
+    screen: LandingScreen,
     navigationOptions: {
       headerTitle: "Landing"
     }

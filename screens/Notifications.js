@@ -38,7 +38,8 @@ class Cart extends React.Component {
     const {notification , emailNotification} = this.state
     return (
       <View style={{ flex: 1 }}>
-        <CustomHeader home title={'NOTIFICATIONS'} />
+        <CustomHeader home title={'NOTIFICATIONS'} 
+        navigation = {this.props.navigation}/>
         <View style = {[styles.rowContainer , {borderBottomColor : themeColor , borderBottomWidth : 1}]}>
             <Text style = {styles.heading}>Sound </Text>
             <View style = {{flexDirection : 'row'}}>

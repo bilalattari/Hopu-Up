@@ -27,7 +27,9 @@ class Videos extends React.Component {
   render () {                   
     return (
       <View style={{ flex: 1 }}>
-        <CustomHeader home title={'VIDEOS'} add = {true} onClickAdd = {()=> this.props.navigation.navigate("AddItem" , {slogan : 'Uploaded Videos Should Inspire and Bread Hope'})} />
+        <CustomHeader home title={'VIDEOS'} add = {true}
+        navigation = {this.props.navigation}
+        onClickAdd = {()=> this.props.navigation.navigate("AddItem" , {slogan : 'Uploaded Videos Should Inspire and Bread Hope'})} />
         <SearchInput value  = {this.state.search}  
         onChangeText = {(text)=> this.setState({search : text})} 
         placeholder= {"Search Videos"} />

@@ -43,7 +43,7 @@ render() {
       const {navigation} = this.props.navigation
         return (
           <View>
-              <CustomHeader  home = {true}  title = {'Messages'} />
+              <CustomHeader  home = {true}  title = {'Messages'} navigation = {this.props.navigation} />
                    <FlatList
                    data = {['1' , '2' , '3','4','5' , '6']}
                    renderItem  ={({data , index})=> this.messageList(data)}

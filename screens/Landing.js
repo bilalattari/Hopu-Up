@@ -14,11 +14,14 @@ import Slogan from '../Component/Slogan'
   constructor(props){
     super(props)
   }
+  static navigationOptions = {
+    header: null
+  }
     render() {
       const {navigation} = this.props
         return (
             <View style={styles.container}>
-               <Logo />
+               <Logo  logo = {true}/>
                  <Slogan />
                  <View style = {{flexDirection : "row" , justifyContent : "space-around"}}>
                      <CustomButton  title = {'Login'} onPress = {()=> navigation.navigate("SignIn")}/>

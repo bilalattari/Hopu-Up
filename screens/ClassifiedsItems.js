@@ -33,6 +33,7 @@ class ClassifiedsItems extends React.Component {
     return (
       <View style={{ flex: 1 }}>
         <CustomHeader home title={'CLASSIFIED'} add = {true} 
+        navigation = {this.props.navigation}
         onClickAdd = {()=> this.props.navigation.navigate("AddItem" , {slogan : 'Create Classified Adds'})} />
         <SearchInput value  = {this.state.search}  onChangeText = {(text)=> this.setState({search : text})}
          placeholder= {"Search Classified"} />

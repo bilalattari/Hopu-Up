@@ -52,6 +52,7 @@ render () {
     return (
     <View style={styles.container}>
         <CustomHeader
+        
         title={'Verify Your Account'}
         openMenu={() => this.props.navigation.navigate('Home')}
         />

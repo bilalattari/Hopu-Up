@@ -41,7 +41,8 @@ class Buy extends React.Component {
     const { navigation } = this.props
     return (
       <View style={{ flex: 1 }}>
-        <CustomHeader home title={'Buy Now'} />
+        <CustomHeader home title={'Buy Now'} 
+        navigation = {this.props.navigation}/>
         <ScrollView>
           <ProductDescription
             title={'Medicine'}

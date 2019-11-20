@@ -26,7 +26,9 @@ render() {
       const {navigation} = this.props.navigation
         return (
           <View style = {{flex : 1}}>
-              <CustomHeader  home = {true}  title = {'Messages'} />
+              <CustomHeader  home = {true}  title = {'Messages'}
+              navigation = {this.props.navigation}
+              navigation = {this.props.navigation} />
               <ScrollView>
                    <FlatList
                    data = {['1' , '2' , '3','4','5' , '6']}

@@ -27,7 +27,8 @@ class Favourites extends React.Component {
     const { navigation } = this.props.navigation
     return (
       <ScrollView stickyHeaderIndices={[0]}>
-        <CustomHeader home title={'FAVOURITES'} />
+        <CustomHeader home title={'FAVOURITES'}
+        navigation = {this.props.navigation} />
           <Text style = {styles.header}>Store</Text>
           <FlatList 
           data = {['1' , '2']}

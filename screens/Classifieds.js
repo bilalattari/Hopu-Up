@@ -27,7 +27,9 @@ class Classifieds extends React.Component {
     const {navigation} = this.props
     return (
       <View style={styles.container}>
-        <CustomHeader title={'CLASSIFIEDS'}/>
+        
+        <CustomHeader title={'CLASSIFIEDS'}
+        navigation = {this.props.navigation}/>
              <CustomInput  
              containerStyle = {{width : '70%' , alignSelf: 'center', marginVertical: 10, marginTop:  '15%',}}
               placeholder = {'Find'} textChange = {(text)=> console.log(text)}/>

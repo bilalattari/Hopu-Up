@@ -25,7 +25,8 @@ class Conditions extends React.Component {
   render () {                   
     return (
       <View style={{ flex: 1 }}>
-        <CustomHeader home title={'TERMS & CONDITIONS'} />
+        <CustomHeader home title={'TERMS & CONDITIONS'} 
+        navigation = {this.props.navigation}/>
         <ScrollView>
         <Text style = {{marginHorizontal : 15 , color  : themeColor , fontSize : 16 , padding : 12}}>sdasdasdsadasdsa sdasdasdsadasdsa sdasdasdsadasdsa
         sdasdasdsadasdsa sdasdasdsadasdsa sdasdasdsadasdsa sdasdasdsadasdsa sdasdasdsadasdsa sdasdasdsadasdsa

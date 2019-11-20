@@ -27,7 +27,9 @@ class VideoScreen extends React.Component {
     const { navigation } = this.props.navigation
     return (
       <ScrollView stickyHeaderIndices={[0]}>
-        <CustomHeader home title={'Manage Videos'} />
+        <CustomHeader home title={'Manage Videos'}
+        navigation = {this.props.navigation}
+        />
         <Video
           source={{ uri: 'https://www.youtube.com/watch?v=w-OucrPtOyI' }} // Can be a URL or a local file.
           ref={ref => {

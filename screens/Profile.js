@@ -50,7 +50,7 @@ render() {
       const {navigation} = this.props.navigation
         return (
           <View>
-              <CustomHeader  home = {true}  title = {'User Name'} />
+              <CustomHeader  home = {true}  title = {'User Name'} navigation = {this.props.navigation} />
               <Text style = {styles.header}>Change Picture</Text>
                 {
                   this.state.image !== '' ?

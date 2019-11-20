@@ -24,7 +24,8 @@ class ProductScreen extends React.Component {
     const { navigation } = this.props.navigation
     return (
       <ScrollView stickyHeaderIndices={[0]}>
-        <CustomHeader home title={'Manage Product'} />
+        <CustomHeader home title={'Manage Product'}
+        navigation = {this.props.navigation} />
         <Image 
         source = {require('../assets/download.jpg')}
         style = {{height : 200  , width : '100%' , backgroundColor : themeColor,}} />

@@ -22,7 +22,8 @@ import Slogan from '../Component/Slogan'
       const {navigation} = this.props
         return (
             <ScrollView style={styles.container}>
-              <CustomHeader title = {'Login'} />
+              <CustomHeader title = {'Login'}
+              navigation = {this.props.navigation} />
               <Logo height={250}/>
               <Slogan />
               <CustomInput label = {'Email'} 

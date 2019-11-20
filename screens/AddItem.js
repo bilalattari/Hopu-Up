@@ -49,7 +49,9 @@ class AddItem extends React.Component {
     console.log()                   
     return (
       <View style={{ flex: 1 }}>
-        <CustomHeader home title={ this.state.slogan === 'Create Classified Adds' ?  'CREATE CLASSIFIED ADDS' :  'UPLOAD'} />
+        <CustomHeader 
+        navigation = {this.props.navigation}
+        home title={ this.state.slogan === 'Create Classified Adds' ?  'CREATE CLASSIFIED ADDS' :  'UPLOAD'} />
         <ScrollView>
           <Text style = {styles.videoSlogan}> {this.state.slogan} </Text>
           <TouchableOpacity onPress = {this._openPicker} style = {styles.videoContainer}>
