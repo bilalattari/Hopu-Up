@@ -22,7 +22,9 @@ import Slogan from '../Component/Slogan'
         return (
             <View style={styles.container}>
                <Logo  logo = {true}/>
+               <View style = {{marginTop : -80}}>
                  <Slogan />
+                 </View>
                  <View style = {{flexDirection : "row" , justifyContent : "space-around"}}>
                      <CustomButton  title = {'Login'} onPress = {()=> navigation.navigate("SignIn")}/>
                      <CustomButton  title = {'Sign Up'} onPress = {()=> navigation.navigate("CreateAccount")}/>

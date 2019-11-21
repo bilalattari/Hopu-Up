@@ -14,7 +14,6 @@ import { withNavigation, NavigationEvents } from 'react-navigation'
 import { themeColor } from '../Constant'
 import ProductDescription from '../Component/ProductDescription'
 import Tags from '../Component/Tag'
-
 const url  =  'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRI2GaDkRQ5FV83CxoXIu0tN2oVNIN8ANTLdnb4j00c-zYOVyBD'
 class Favourites extends React.Component {
   constructor (props) {
@@ -27,9 +26,17 @@ class Favourites extends React.Component {
     const { navigation } = this.props.navigation
     return (
       <ScrollView stickyHeaderIndices={[0]}>
-        <CustomHeader home title={'FAVOURITES'}
+        <CustomHeader home title={'FAVORITE'}
         navigation = {this.props.navigation} />
-          <Text style = {styles.header}>Store</Text>
+          <Text style = {styles.header}>VIDEOS</Text>
+          <FlatList 
+          data = {['1' , '2']}
+          keyExtractor = {(item)=> item}
+          renderItem = {({item , index})=> 
+          <ProductDescription title  = {"Medicine"} url = {url} quantity = {"10"} 
+           description = {"The description is about The description is about The description is about The description is about" } />}
+          />  
+          <Text style = {styles.header}>STORE</Text>
           <FlatList 
           data = {['1' , '2']}
           keyExtractor = {(item)=> item}
@@ -37,8 +44,7 @@ class Favourites extends React.Component {
           <ProductDescription title  = {"Medicine"} url = {url} quantity = {"10"} 
            description = {"The description is about The description is about The description is about The description is about" } />}
           />
-           
-          <Text style = {styles.header}>Classified</Text>
+          <Text style = {styles.header}>CLASSIFIED</Text>
           <FlatList 
           data = {['1' , '2']}
           keyExtractor = {(item)=> item}
@@ -61,6 +67,7 @@ const styles = StyleSheet.create({
     backgroundColor: themeColor
   },
   labelStyle :{ color: themeColor, fontSize: 14, paddingVertical: 2 },
-  header : {color : themeColor , padding : 12 , fontWeight: "800" ,fontSize : 20 }
+  header : {backgroundColor : themeColor , padding : 8 , fontWeight: "800" ,fontSize : 18 ,
+   width : '100%' , color : '#fff' }
 })
 export default withNavigation(Favourites)

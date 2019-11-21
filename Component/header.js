@@ -11,9 +11,9 @@ export default (CustomHeader = props => (
       containerStyle={{ backgroundColor: 'skyblue' }}
       leftComponent={
         props.home ? (
-          <Logo height={70} />
+          <Logo height={50} />
         ) : (
-          { icon: 'arrow-back', color: '#fff' }
+          { icon: 'arrow-back', color: '#fff' , onPress : ()=> props.navigation.goBack() }
         )
       }
       centerComponent={{

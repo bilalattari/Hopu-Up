@@ -24,7 +24,7 @@ import Slogan from '../Component/Slogan'
             <ScrollView style={styles.container}>
               <CustomHeader title = {'Login'}
               navigation = {this.props.navigation} />
-              <Logo height={250}/>
+              <Logo logo = {true} />
               <Slogan />
               <CustomInput label = {'Email'} 
               labelStyle = {{color : themeColor , fontSize: 14, paddingVertical: 2,}}

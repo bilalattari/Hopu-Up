@@ -15,7 +15,9 @@ class SignUp extends React.Component {
     const { navigation } = this.props
     return (
       <ScrollView>
-        <Logo height={120} />
+        <CustomHeader title = {'Sign Up'}
+              navigation = {this.props.navigation} />
+        <Logo  logo = {true} />
         <Image
           source={require('../assets/avatar.png')}
           style={styles.userImage}

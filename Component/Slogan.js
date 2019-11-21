@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     color: themeColor,
     fontSize: 20,
     marginHorizontal: '10%',
-    textAlign: 'center'
+    textAlign: 'center',
+    marginVertical : 12
   }
 })

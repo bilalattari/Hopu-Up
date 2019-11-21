@@ -18,7 +18,7 @@ import { themeColor } from '../Constant';
 
 let HomePageTitle = (props)=> 
         <TouchableOpacity  {...props}
-        style  = {{alignSelf : 'center' ,flexDirection : 'row' , width : '70%' , height : 30 , alignItems : 'center'  , marginVertical : 3}}>
+                 style  = {{alignSelf : 'center' ,flexDirection : 'row' , width : '70%' , height : 30 , alignItems : 'center'  , marginVertical : 3}}>
                   <Icon color = {themeColor} type = {props.type} name = {props.name} containerStyle = {{width : '20%'}}/>
                   <Text style = {{color :themeColor   , fontSize : 20 }}> {props.title} </Text>
                 </TouchableOpacity>

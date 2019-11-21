@@ -34,7 +34,7 @@ class Products extends React.Component {
       <View style={{ flex: 1 }}>
         <CustomHeader home title={'STORE'} add = {true} 
         navigation = {this.props.navigation}
-        onClickAdd = {()=> this.props.navigation.navigate("AddItem" , {slogan : 'Become a Seller on Hope Up'})} />
+        onClickAdd = {()=> this.props.navigation.navigate("AddItem" , {slogan : 'Sell on Home Up'})} />
         <SearchInput value  = {this.state.search}  onChangeText = {(text)=> this.setState({search : text})}
          placeholder= {"Search Product"} />
         <ScrollView>
