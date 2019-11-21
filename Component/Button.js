@@ -3,12 +3,13 @@ import { Button  , Icon } from 'react-native-elements'
 import {themeColor} from '../Constant/index'
 export default CustomButton = props => 
 <Button title={props.title}
-icon={props.icon ?
+icon={props.iconName ?
     <Icon
     style = {{padding : 6}}
-      name={props.icon}
-      type = {font-awesome}
-      size={15}
+      name={props.iconName}
+      type = {'font-awesome'}
+      size={25}
+      containerStyle = {{paddingRight : 25}}
       color="white"
     /> : null
   }

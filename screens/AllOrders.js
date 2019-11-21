@@ -24,7 +24,7 @@ class AllOrders extends React.Component {
     header: null
   }
   render () {
-    const { navigation } = this.props.navigation
+    const { navigation } = this.props
     return (
       <ScrollView stickyHeaderIndices={[0]}>
         <CustomHeader home title={'ALL ORDERS'}
@@ -43,7 +43,9 @@ class AllOrders extends React.Component {
           data = {['1' , '2']}
           keyExtractor = {(item)=> item}
           renderItem = {({item , index})=> 
-          <ProductDescription title  = {"Medicine"} url = {url} quantity = {"10"} 
+          <ProductDescription 
+          onPress = {()=>navigation.navigate('BoughtItem') }
+          title  = {"Medicine"} url = {url} quantity = {"10"} 
            description = {"The description is about The description is about The description is about The description is about" } />}
           />
           <Text style = {styles.header}>Classified</Text>

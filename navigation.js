@@ -24,11 +24,16 @@ import AddItem from './screens/AddItem';
 import Products from './screens/Products';
 import Conditions from './screens/TermsCondition';
 import AllOrders from './screens/AllOrders';
+import BoughtItem from './screens/BoughtItem';
+import TrackItem from './screens/TrackItem';
+import ReturnItem from './screens/ReturnItem';
+
 import Buy from './screens/Buy';
 import Notifications from './screens/Notifications';
 import RepostClassified from './screens/ReportClassified';
 import Classifieds from './screens/Classifieds';
 import ClassifiedsItems from './screens/ClassifiedsItems';
+import Intro from './screens/Intro';
 import AdSucces from './screens/AdSuccess';
 import ProductScreen from './screens/ProductScreen';
 import {Icon} from 'react-native-elements'
@@ -111,12 +116,25 @@ const OrderStack = createStackNavigator({
       headerTitle: "Search"
     }
   },
-  Details: {
-    screen: Profile,
+  BoughtItem: {
+    screen: BoughtItem,
     navigationOptions: {
-      headerTitle: "Details"
+      headerTitle: "BoughtItem"
     }
-  }
+  },
+  TrackItem: {
+    screen: TrackItem,
+    navigationOptions: {
+      headerTitle: "BoughtItem"
+    }
+  },
+  ReturnItem: {
+    screen: ReturnItem,
+    navigationOptions: {
+      headerTitle: "ReturnItem"
+    }
+  },
+  
 });
 
 const ProductStack = createStackNavigator({
@@ -167,6 +185,12 @@ const ProfileStack = createStackNavigator({
       headerTitle: "Profile"
     }
   },
+  Notifications: {
+    screen: Notifications,
+    navigationOptions: {
+      headerTitle: "Notifications"
+    }
+  },
   Favourites : {
     screen: Favourites,
     navigationOptions: {
@@ -203,12 +227,7 @@ const ProfileStack = createStackNavigator({
       headerTitle: "Conditions"
     }
   },
-  Notifications: {
-    screen: Notifications,
-    navigationOptions: {
-      headerTitle: "Notifications"
-    }
-  }
+
 });
 
 const MainTabs = createBottomTabNavigator({
@@ -291,7 +310,7 @@ const AppModalStack = createStackNavigator(
 
 const App = createSwitchNavigator({
   Loading: {
-    screen: LandingScreen
+    screen: Intro
   },
   Auth: {
     screen: AuthStack

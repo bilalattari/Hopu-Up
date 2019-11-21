@@ -27,7 +27,7 @@ import {Icon} from 'react-native-elements'
                  <View style = {{flexDirection : "row" , justifyContent : "space-around"}}>
                      <CustomButton 
                      containerStyle = {{width : 200}}
-                     title = {'Welcome To Hopeup'} onPress = {()=> navigation.navigate("SignIn")}/>
+                     title = {'Welcome To Hopeup'} onPress = {()=> navigation.navigate("Landing")}/>
                      </View>
             </View>
         );

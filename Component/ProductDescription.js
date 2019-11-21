@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import CustomButton from './Button'
-import { View , Image , StyleSheet , Text} from 'react-native'
+import { View , Image , StyleSheet , Text , TouchableOpacity} from 'react-native'
 import {themeColor} from '../Constant/index'
 export default ProductDescription = ( props ) =>
-<View style = {styles.container}>
+<TouchableOpacity  {...props} style = {styles.container}>
 <View style = {styles.row}> 
 <Image source = {{uri : props.url}} 
 style = {styles.imageStyle} />
@@ -25,12 +25,12 @@ style = {styles.imageStyle} />
 <CustomButton title = {new Date().toLocaleDateString()} 
 containerStyle = {{alignSelf: 'flex-end',marginTop: 8}} />
 }
-</View>
+</TouchableOpacity>
 
 
 
 const styles  = StyleSheet.create({
-container : {marginHorizontal : 12 , marginVertical : 3},
+container : {marginHorizontal : 12 , marginVertical : 6},
 row : {flexDirection  : "row" , height : 50 , alignItems : "center"  ,
 justifyContent : "space-between"},
 imageStyle : {height : 48 , width:  55 , borderRadius : 5 , },
